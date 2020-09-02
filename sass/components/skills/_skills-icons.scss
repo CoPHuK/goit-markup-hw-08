@@ -1,0 +1,25 @@
+.container-skills-icons {
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $wl-button-color;
+}
+.skills-icons {
+  width: 70px;
+  height: 70px;
+}
+
+.skills-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  h3 {
+    padding-top: 30px;
+    color: $title-text-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}

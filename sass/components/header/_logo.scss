@@ -1,0 +1,11 @@
+.logo {
+  color: $title-text-color;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  & span {
+    color: $accent-color;
+  }
+}

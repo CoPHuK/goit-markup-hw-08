@@ -1,0 +1,17 @@
+.footer-send-icon {
+  position: absolute;
+  fill: white;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+}
+.footer-icons-item {
+  a {
+    background: rgba(255, 255, 255, 0.1);
+    &:not(last-child) {
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+h2 {
+  color: $title-text-color;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+img {
+  display: block;
+}
+svg {
+  box-sizing: border-box;
+}
+.list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.link {
+  font-style: inherit;
+  text-decoration: none;
+  color: $title-text-color;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  transition: color $timing cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.current {
+  color: $accent-color;
+  opacity: 1;
+}
+
+b {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $bcg-color;
+}

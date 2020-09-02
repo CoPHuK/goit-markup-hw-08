@@ -1,0 +1,35 @@
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: #fff;
+  text-align: center;
+}
+.menu-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.button-menu {
+  display: inline-flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  .icon-cross {
+    display: none;
+  }
+  &.is-open .icon-cross,
+  &.is-open ~ .menu-container {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+.navigation {
+  position: relative;
+}

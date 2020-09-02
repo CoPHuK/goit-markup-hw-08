@@ -1,0 +1,39 @@
+footer {
+  padding: 60px 0px;
+  background-color: $hero-bcg;
+  span {
+    color: $bcg-color;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    color: $accent-color;
+  }
+
+  .footer-contacts {
+    color: $contact-color;
+  }
+  span {
+    display: inline-block;
+  }
+  .social-svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    transition: fill var(--timing) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+address {
+  margin-top: 20px;
+}
+.footer-container .logo {
+  color: $bcg-color;
+}
+.subscription {
+  display: flex;
+  align-items: flex-end;
+}

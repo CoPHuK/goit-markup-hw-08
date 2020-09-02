@@ -1,0 +1,38 @@
+.icon-clients {
+  fill: #afb1b8;
+  transition: fill $timing cubic-bezier(0.4, 0, 0.2, 1);
+  .hover-svg:hover &,
+  .hover-svg:focus & {
+    fill: $accent-color;
+  }
+
+  &:nth-child(1) {
+    width: 44.27px;
+    height: 49.23px;
+  }
+
+  &:nth-child(2) {
+    width: 40px;
+    height: 52px;
+  }
+
+  &:nth-child(3) {
+    width: 41px;
+    height: 42.6px;
+  }
+
+  &clients:nth-child(4) {
+    width: 79.66px;
+    height: 42.02px;
+  }
+
+  &:nth-child(5) {
+    width: 59px;
+    height: 47px;
+  }
+
+  &:nth-child(6) {
+    width: 88.48px;
+    height: 45.44px;
+  }
+}
