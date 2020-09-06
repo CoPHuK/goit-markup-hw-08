@@ -1,3 +1,9 @@
+.pf-button-list {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+}
+
 .worklist-button {
   padding: 6px 22px;
   background-color: $wl-button-color;
@@ -18,9 +24,8 @@
 }
 .button-list-item:not(:last-child) {
   margin-right: 8px;
-}
-
-.pf-button-list {
-  display: flex;
-  justify-content: center;
+  .pfitem:hover &,
+  .pfitem:focus & {
+    transform: translateX(0);
+  }
 }

@@ -1,19 +1,24 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin: -15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .clients-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: $title-text-color;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.18;
 }
-
-.client-list-item:not(:last-child) {
-  margin-right: 30px;
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .link.hover-svg {
+  display: flex;
+  width: 100%;
   height: 90px;
-  width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   align-items: center;
@@ -22,5 +27,17 @@
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
+  }
+}
+.client-list-item {
+  display: block;
+  margin: 15px;
+
+  @media screen and (max-width: 767px) {
+    width: calc(50% - 30px);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(33.3332% - 60px);
   }
 }

@@ -1,5 +1,6 @@
 footer {
-  padding: 60px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $hero-bcg;
   span {
     color: $bcg-color;
@@ -7,9 +8,14 @@ footer {
 
   .container {
     display: flex;
-    align-items: center;
-  }
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: center;
 
+    @media screen and (min-width: 768px) {
+      justify-content: space-between;
+    }
+  }
   a {
     color: $accent-color;
   }
@@ -27,13 +33,40 @@ footer {
     transition: fill var(--timing) cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+.footer-logo {
+  margin: 0;
+}
+.footer-nav {
+  @media screen and (min-width: 768px) {
+  }
+}
+.footer-network {
+  @media screen and (min-width: 768px) {
+    margin-right: 89px;
+  }
+}
 address {
   margin-top: 20px;
+  @media screen and (min-width: 768px) {
+  }
 }
-.footer-container .logo {
-  color: $bcg-color;
+.footer-container {
+  margin-right: auto;
+  margin-left: auto;
+  .logo {
+    color: $bcg-color;
+  }
 }
 .subscription {
-  display: flex;
   align-items: flex-end;
+}
+.list.networks {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.container-form {
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
 }

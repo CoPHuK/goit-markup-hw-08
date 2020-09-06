@@ -20,43 +20,50 @@
       <div class="container">
         <nav class="navigation">
           <a href="./index.html" class="logo link"> <span>Web</span> Studio </a>
+          <button type="button" class="button-menu" data-menu-button>
+            <svg class="menu-icon" aria-label="Кнопка мобильного меню">
+              <use
+                href="./img/symbol-defs.svg#menu-close"
+                class="icon-cross"
+              ></use>
+              <use
+                href="./img/symbol-defs.svg#icon-menu"
+                class="icon-menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-container">
+            <ul class="site-nav list">
+              <li class="item">
+                <a href="./index.html" class="link current">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
 
-          <ul class="site-nav list">
-            <li class="item">
-              <div class="overflow">
-                <a href="./index.html" class="link">Студия</a>
-              </div>
-            </li>
-            <li class="item">
-              <div class="overflow">
-                <a href="./portfolio.html" class="link current">Портфолио</a>
-              </div>
-            </li>
-            <li class="item">
-              <div class="overflow"><a href="" class="link">Контакты</a></div>
-            </li>
-          </ul>
+            <ul class="contact list">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link-contact link">
+                  <svg class="item-icons mail">
+                    <use href="./img/symbol-defs.svg#icon-send"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+
+              <li class="item">
+                <a href="tel:+38096111111" class="link-contact link">
+                  <svg class="item-icons phone">
+                    <use href="./img/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
-
-        <ul class="contact list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link-contact link">
-              <svg class="item-icons mail">
-                <use href="./img/symbol-defs.svg#icon-send"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-
-          <li class="item">
-            <a href="tel:+38096111111" class="link-contact link">
-              <svg class="item-icons phone">
-                <use href="./img/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <section class="Project-pf">
@@ -247,8 +254,8 @@
     </section>
     <footer>
       <div class="container">
-        <div class="footer-container">
-          <a href="" class="logo link"> <span>Web</span> Studio </a>
+        <div class="footer-container footer-nav">
+          <a href="" class="logo link footer-logo"> <span>Web</span> Studio </a>
           <address>
             <span>г. Киев, пр-т Леси Украинки, 26</span>
             <div class="footer-contacts">
@@ -261,7 +268,7 @@
             </div>
           </address>
         </div>
-        <div class="footer-container">
+        <div class="footer-container footer-network">
           <b>присоединяйтесь</b>
           <ul class="list networks">
             <li class="footer-icons-item">
@@ -294,14 +301,14 @@
             </li>
           </ul>
         </div>
-        <div class="footer-container">
+        <div class="footer-container container-form">
           <b>Подпишитесь на рассылку</b>
           <div class="subscription">
             <form class="footer-form">
               <input
                 class="sub-form"
                 type="text"
-                name=""
+                name="footer-form"
                 id="mail-footer"
                 placeholder="E-mail"
               />
@@ -316,5 +323,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

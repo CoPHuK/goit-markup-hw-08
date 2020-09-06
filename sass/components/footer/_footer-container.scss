@@ -1,38 +1,33 @@
 .footer-container {
-  &:first-child {
-    margin-right: 70px;
-  }
-  &:nth-child(2) {
-    margin-right: 93px;
+  display: inline-block;
+  @media screen and (max-width: 767px) {
+    width: 100%;
   }
 
-  & .logo {
+  // text-align: center;
+  .logo {
     color: $bcg-color;
     transition: color $timing cubic-bezier(0.4, 0, 0.2, 1);
   }
-  & .logo:hover,
-  & .logo:focus {
+  .logo:hover,
+  .logo:focus {
     color: $accent-color;
   }
 
-  & .networks {
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-  }
-
-  & .logo.link {
-    margin-right: 0px;
-    margin-bottom: 20px;
-  }
-  & .button {
+  .button {
     position: relative;
-    display: flex;
     width: 200px;
     height: 50px;
     padding: 10px 62px 10px 29px;
+    margin-top: 20px;
     font-size: 16px;
     line-height: 1.87;
     font-weight: bold;
+  }
+  b {
+    display: inline-block;
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
   }
 }
