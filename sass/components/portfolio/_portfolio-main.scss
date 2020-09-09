@@ -33,6 +33,7 @@
   overflow: hidden;
 }
 .main-pf-list {
+  margin: -15px;
   @media screen and (max-width: 767px) {
     margin-top: 40px;
     justify-content: center;
@@ -41,8 +42,13 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    margin-bottom: 60px;
   }
-  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 35px;
+    margin-bottom: 79px;
+  }
+
   // display: flex;
   // flex-wrap: wrap;
 }
@@ -50,9 +56,7 @@
 .pf-container {
   display: block;
   max-width: 450px;
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  margin: 15px;
   border: 1px solid #eeeeee;
   transition: box-shadow $timing cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
@@ -60,23 +64,22 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  @media screen and (min-width: 768px) {
-    width: calc(50% - 30px);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 60px) / 2);
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    &:nth-child(2n + 1) {
-      margin-right: 30px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
   }
 }
 .pf-overlay {
+  display: flex;
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
   top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
-  padding-top: 77px;
+  align-items: center;
   padding-left: 24px;
   padding-right: 24px;
   font-size: 18px;
