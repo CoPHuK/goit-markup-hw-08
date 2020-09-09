@@ -2,6 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   // justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .worklist-button {
@@ -24,6 +27,11 @@
 }
 .button-list-item:not(:last-child) {
   margin-right: 8px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+
   .pfitem:hover &,
   .pfitem:focus & {
     transform: translateX(0);
