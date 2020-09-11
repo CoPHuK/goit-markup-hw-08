@@ -90,6 +90,12 @@ b {
   }
 }
 
+@media screen and (max-width: 767px) {
+  header .container {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -117,10 +123,6 @@ body p {
 
 header {
   position: relative;
-}
-
-header .container {
-  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -320,6 +322,9 @@ header .container {
 
 @media screen and (max-width: 767px) {
   .logo {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
     margin-top: 16px;
     margin-bottom: 16px;
   }
@@ -350,13 +355,25 @@ header .container {
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/Hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Hero.jpg);
   background-color: black;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   background-color: #2f303a;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url("../img/mobile/Header-480-x1.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../img/mobile/Header-480-x1.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../img/mobile/Header-480-x2.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../img/mobile/Header-480-x2.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -372,6 +389,29 @@ header .container {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url("../img/desktop/Header-1024-x1.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../img/desktop/Header-1024-x1.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../img/desktop/Header-1024-x2.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../img/desktop/Header-1024-x2.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: url("../img/tablet/Header-768-x1.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../img/tablet/Header-768-x1.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../img/tablet/Header-768-x2.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../img/tablet/Header-768-x2.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 
@@ -598,6 +638,7 @@ header .container {
 }
 
 .team .list {
+  margin: auto;
   width: 100%;
   font-size: 16px;
   line-height: 1.19;
@@ -630,7 +671,7 @@ header .container {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .staff-container {
     width: 354px;
   }
@@ -1181,6 +1222,18 @@ address {
           transform: translateX(0);
 }
 
+@media screen and (max-width: 380px) {
+  .pf-overlay p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .pf-overlay p {
+    font-size: 14px;
+  }
+}
+
 .pf-button-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1236,7 +1289,7 @@ address {
 
 .backdrop {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -1268,7 +1321,7 @@ address {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 450px;
+  margin: auto;
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
@@ -1276,6 +1329,18 @@ address {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .btn-close {
@@ -1406,6 +1471,7 @@ address {
 .menu-container {
   background-color: #fff;
   text-align: center;
+  z-index: 3;
 }
 
 @media screen and (max-width: 767px) {
@@ -1455,8 +1521,8 @@ address {
   position: absolute;
   right: 0;
   top: 0;
-  -webkit-transform: translateX(5px) translateY(5px);
-          transform: translateX(5px) translateY(5px);
+  -webkit-transform: translateX(10px) translateY(10px);
+          transform: translateX(10px) translateY(10px);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

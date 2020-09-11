@@ -145,30 +145,56 @@
           <ul class="list work-item">
             <li>
               <div class="container-overlay">
-                <a href=""
-                  ><img src="./img/dapp.jpg" alt="dapp" width="370" />
-                  <div class="work-type"><h3>Десктопные приложения</h3></div>
-                </a>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/dapp-1024-x1.jpg 1x,
+                      ./img/desktop/dapp-1024-x2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./img/dapp.jpg" alt="dapp" width="370" />
+                </picture>
+
+                <div class="work-type"><h3>Десктопные приложения</h3></div>
               </div>
             </li>
             <li>
               <div class="container-overlay">
-                <a href=""
-                  ><img src="./img/mapp.jpg" alt="mapp" width="370" />
-                  <div class="work-type">
-                    <h3 class="work-type">Мобильные приложения</h3>
-                  </div>
-                </a>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/mapp-1024-x1.jpg 1x,
+                      ./img/desktop/mapp-1024-x2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img src="./img/mapp.jpg" alt="mapp" width="370" />
+                </picture>
+
+                <div class="work-type">
+                  <h3 class="work-type">Мобильные приложения</h3>
+                </div>
               </div>
             </li>
             <li>
               <div class="container-overlay">
-                <a href=""
-                  ><img src="./img/diz.jpg" alt="diz" width="370" />
-                  <div class="work-type">
-                    <h3 class="work-type">Дизайнерские решения</h3>
-                  </div>
-                </a>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/diz-1024-x1.jpg 1x,
+                      ./img/desktop/diz-1024-x2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img src="./img/diz.jpg" alt="diz" width="370" />
+                </picture>
+
+                <div class="work-type">
+                  <h3 class="work-type">Дизайнерские решения</h3>
+                </div>
               </div>
             </li>
           </ul>
@@ -181,7 +207,31 @@
           <ul class="list staff">
             <li class="staff-container">
               <div class="staff-photo">
-                <img src="./img/igor.jpg" alt="Nikoly" height="460" />
+                <!-- <img src="./img/igor.jpg" alt="Nikoly" height="460" /> -->
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/igor-1024-x1.jpg 1x,
+                      ./img/desktop/igor-1024-x2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tablet/igor-768-x1.jpg 1x,
+                      ./img/tablet/igor-768-x2.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/mobile/igor-480-x1.jpg 1x,
+                      ./img/mobile/igor-480-x2.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./img/igor.jpg" alt=" Игорь Демьяненко" />
+                </picture>
               </div>
 
               <h3>Игорь Демьяненко</h3>
@@ -213,16 +263,38 @@
                 <li>
                   <a href="" class="link icon-link"
                     ><svg class="icon social-svg">
-                      <use
-                        href="./img/symbol-defs.svg#icon-linkedin"
-                      ></use></svg
-                  ></a>
+                      <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
             <li class="staff-container">
               <div class="staff-photo">
-                <img src="./img/Olga.jpg" alt="Olga" height="460" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/olga-1024-x1.jpg 1x,
+                      ./img/desktop/olga-1024-x2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tablet/olga-768-x1.jpg 1x,
+                      ./img/tablet/olga-768-x2.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/mobile/olga-480-x1.jpg 1x,
+                      ./img/mobile/olga-480-x2.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./img/olga.jpg" alt="Фото Игоря Демьяненко" />
+                </picture>
               </div>
               <h3>Ольга Репина</h3>
               <p>Frontend Developer</p>
@@ -262,7 +334,30 @@
             </li>
             <li class="staff-container">
               <div class="staff-photo">
-                <img src="./img/Nikolay.jpg" alt="Ivan" height="460" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/nikolay-1024-x1.jpg 1x,
+                      ./img/desktop/nikolay-1024-x2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tablet/nikolay-768-x1.jpg 1x,
+                      ./img/tablet/nikolay-768-x2.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/mobile/nikolay-480-x1.jpg 1x,
+                      ./img/mobile/nikolay-480-x2.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./img/nikolay.jpg" alt="Николай" />
+                </picture>
               </div>
 
               <h3>Николай Тарасов</h3>
@@ -303,11 +398,33 @@
             </li>
             <li class="staff-container">
               <div class="staff-photo">
-                <img src="./img/Miha.jpg" alt="Andrey" height="460" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/miha-1024-x1.jpg 1x,
+                      ./img/desktop/miha-1024-x2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tablet/miha-768-x1.jpg 1x,
+                      ./img/tablet/miha-768-x2.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/mobile/miha-480-x1.jpg 1x,
+                      ./img/mobile/miha-480-x2.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./img/miha.jpg" alt="Фото Игоря Демьяненко" />
+                </picture>
               </div>
-
-              <h3>Михаил Ермаков</h3>
-              <p>UI Designer</p>
+              <h3>Ольга Репина</h3>
+              <p>Frontend Developer</p>
               <ul class="list staff-networks">
                 <li>
                   <a href="" class="link icon-link"

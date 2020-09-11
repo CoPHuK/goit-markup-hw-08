@@ -1,6 +1,7 @@
 .menu-container {
   background-color: #fff;
   text-align: center;
+  z-index: 3;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -33,7 +34,8 @@
   position: absolute;
   right: 0;
   top: 0;
-  transform: translateX(5px) translateY(5px);
+
+  transform: translateX(10px) translateY(10px);
   display: inline-flex;
   border: none;
   margin: 0;
