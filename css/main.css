@@ -366,6 +366,7 @@ header {
   .hero {
     background-image: url("../img/mobile/Header-480-x1.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
     background-image: url("../img/mobile/Header-480-x1.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-size: cover;
   }
 }
 
@@ -391,6 +392,7 @@ header {
     padding-bottom: 200px;
     background-image: url("../img/desktop/Header-1024-x1.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
     background-image: url("../img/desktop/Header-1024-x1.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-size: cover;
   }
 }
 
@@ -405,6 +407,7 @@ header {
   .hero {
     background-image: url("../img/tablet/Header-768-x1.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
     background-image: url("../img/tablet/Header-768-x1.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-size: cover;
   }
 }
 
