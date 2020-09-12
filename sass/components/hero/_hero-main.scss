@@ -14,6 +14,7 @@
   @media screen and (max-width: 767px) {
     background-image: url("../img/mobile/Header-480-x1.jpg"),
       linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-size: cover;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -34,6 +35,7 @@
     padding-bottom: 200px;
     background-image: url("../img/desktop/Header-1024-x1.jpg"),
       linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-size: cover;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -44,6 +46,7 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     background-image: url("../img/tablet/Header-768-x1.jpg"),
       linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-size: cover;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
